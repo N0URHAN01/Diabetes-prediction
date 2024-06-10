@@ -1,0 +1,35 @@
+.btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .se-button,
+  .s-button {
+    padding: 1.8rem 3rem;
+    background-color: #4e0317;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4rem; 
+  }
+  
+  .se-button {
+    background-color: #3b0715; 
+  }
+  
+  .s-button {
+    background-color: hsl(0, 93%, 29%); 
+  }
+  .se-button:hover,
+  .s-button:hover {
+    background-color: #794e4e; 
+  }
+  

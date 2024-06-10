@@ -1,0 +1,39 @@
+{
+  "meals": [
+    {
+      "name": "4 ingredient banana cake for two",
+      "nutrient": "Carbohydrates",
+      "disease": ["diabetes", "obesity"],
+      "diet": "low_fat_diet",
+      "ingredients": ["bisquick", "mashed banana", "egg white", "splenda sugar substitute"],
+      "steps": [
+        "Preheat oven to 200°F",
+        "Blend all ingredients together",
+        "Add more or less sugar to your own personal liking",
+        "Pour into baking bowl",
+        "Bake for 12-15 mins, or until golden brown"
+      ]
+    },
+    {
+      "name": "ala mexicana corn soup",
+      "nutrient": "Carbohydrates",
+      "disease": ["diabetes", "obesity"],
+      "diet": "low_fat_diet",
+      "ingredients": ["garlic", "olive oil", "onion", "fresh jalapeno peppers", "ground cumin", "coriander powder", "salt & freshly ground black pepper", "carrot", "celery", "chicken stock", "corn", "red bell pepper", "fresh coriander", "cayenne", "corn tortilla strips"],
+      "steps": [
+        "Cook the garlic in the oil over moderately low heat, stirring for 1 minute.",
+        "Add the onion and the jalapeno peppers, and cook the mixture, stirring, until the onion is softened.",
+        "Add the cumin, the ground coriander seed, and salt and black pepper to taste and cook the mixture, stirring, for 2 minutes.",
+        "Add the carrot and the celery and cook the mixture over moderate heat, stirring, for 5 minutes.",
+        "Add the stock, the corn cobs, and 2 1/2 cups water and simmer the mixture for 15 minutes.",
+        "Add all but 1 cup of the reserved corn kernels, simmer the mixture for 12 to 15 minutes, or until the kernels are very tender, and discard the cobs.",
+        "In a blender puree the mixture in batches, blending each batch on high speed for at least 1 minute, or until it is very smooth.",
+        "Let the soup cool to room temperature.",
+        "Boil the remaining 1 cup reserved corn kernels for 2 to 4 minutes, or until they are tender, drain them in a colander, and refresh them under cold water.",
+        "Stir the corn into the soup with the roasted bell pepper, the minced coriander, the cayenne, and salt and black pepper to taste and serve the soup at room temperature.",
+        "Garnish with fried tortilla strips"
+      ]
+    },
+    // Add other meals in similar structure
+  ]
+}

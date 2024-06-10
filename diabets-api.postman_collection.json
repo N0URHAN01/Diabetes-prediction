@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "b5c102ae-e8e2-4a67-80a7-32f2bc2eec11",
+		"name": "diabets-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21555272"
+	},
+	"item": [
+		{
+			"name": "user_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\":\"init0x01@me.net\",\n\"password\":\"init0x1\",\n\"name\":\"Abdelrahman Ali\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/auth/signup",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\":\"init0x01@me.net\",\n\"password\":\"init0x1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/auth/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZDI0YjE5YTEtNzM1NS00MDNiLThlOGItMDcwZDI2NTgwZjJmIiwiaWF0IjoxNzEzOTU2Njg2LCJleHAiOjE3MTQ1NjE0ODZ9.VLStBqvW9w4Ezj7c4yOXp-KhF_kSXyfST4u-P9Gm414",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/auth/logout",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiODM0ODVmMDctMTY4NS00NGQwLWI0ZDQtOTk2MmUwM2RlMmY2IiwiaWF0IjoxNzEzOTU3MjA1LCJleHAiOjE3MTQ1NjIwMDV9.Ni9o5NyBtQfcf7fVj7Khdua06z0DWPpAAv6Fbkw63Gg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users/profile",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiODM0ODVmMDctMTY4NS00NGQwLWI0ZDQtOTk2MmUwM2RlMmY2IiwiaWF0IjoxNzEzOTU3MjA1LCJleHAiOjE3MTQ1NjIwMDV9.Ni9o5NyBtQfcf7fVj7Khdua06z0DWPpAAv6Fbkw63Gg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"init0x01@me.net\",\n  \"password\": \"init0x1\",\n  \"name\": \"Abdelrahman Ali\",\n  \"phone\": \"1234567890\",\n  \"address\": \"New Address\",\n   \"blood_pressure\": 120,\n  \"pregnancies\": 2,\n  \"glucose\": 150,\n  \"skin_thickness\": 25,\n  \"insulin\": 60,\n  \"bmi\": 26.5,\n  \"diabetespedigreefunction\": 0.6,\n  \"age\": 35,\n  \"has_diabetes\": false\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZDI0YjE5YTEtNzM1NS00MDNiLThlOGItMDcwZDI2NTgwZjJmIiwiaWF0IjoxNzEzOTU2Njg2LCJleHAiOjE3MTQ1NjE0ODZ9.VLStBqvW9w4Ezj7c4yOXp-KhF_kSXyfST4u-P9Gm414",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"init0x01@me.net\",\n  \"password\": \"init0x1\",\n  \"name\": \"Abdelrahman Ali\",\n  \"phone\": \"1234567890\",\n  \"address\": \"New Address\",\n   \"blood_pressure\": 120,\n  \"pregnancies\": 2,\n  \"glucose\": 150,\n  \"skin_thickness\": 25,\n  \"insulin\": 60,\n  \"bmi\": 26.5,\n  \"diabetespedigreefunction\": 0.6,\n  \"age\": 35,\n  \"has_diabetes\": false\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predicit_diabetes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiODM0ODVmMDctMTY4NS00NGQwLWI0ZDQtOTk2MmUwM2RlMmY2IiwiaWF0IjoxNzEzOTU3MjA1LCJleHAiOjE3MTQ1NjIwMDV9.Ni9o5NyBtQfcf7fVj7Khdua06z0DWPpAAv6Fbkw63Gg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users/predict",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

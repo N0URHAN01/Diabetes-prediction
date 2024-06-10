@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.ptext {
+  color: #810c2b;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 50px;
+}
+
+.form-image {
+  width: 450px;
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 5px;
+  margin-right: 0px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-pair {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  flex: 0 0 48%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: calc(100% - 12px);
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+.button-group {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button-group button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4e0317;
+  color: #fff;
+}
+
+.button-group button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button-group button:hover {
+  background-color: #ca8585;
+}
+
+.error {
+  color: red;
+  font-size: 1.5em;
+  margin-top: 0.25em;
+}
+
+.tab-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.tab-message {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #810c2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  background-color: rgb(104, 101, 101);
+}
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .form-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-image {
+    display: none;
+  }
+
+  .input-pair {
+    flex-direction: column;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+}

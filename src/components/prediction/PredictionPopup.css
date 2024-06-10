@@ -1,0 +1,44 @@
+.prediction-popup {
+  position: absolute;
+  top: calc(100% + 10px); 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999; 
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+.popup-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-message {
+  font-size: 20px;
+   color: rgb(138, 36, 36);
+   font-weight: bold;
+}
+
+.loading-message {
+  font-size: 18px;
+  font-style: italic;
+}

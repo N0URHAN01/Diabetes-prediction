@@ -1,0 +1,61 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 55px;
+  
+  
+    /*position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Make it full width */
+   
+   
+    z-index: 1000; /* Ensure it's above other content */
+    transition: top 0.3s; /* Add smooth transition for better user experience */
+  }
+  .navbar-menu-container {
+    display: none;
+  }
+  .navbar-links-container a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .primary-button {
+    padding: 0.9rem 1.75rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+  }
+  
+  .primary-button:hover {
+    background-color: rgb(234, 234, 234);
+  }
+  .navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .navbar-user-icon {
+    font-size: 1.5rem; /* Increase the size of the user icon */
+    margin-left: auto; /* Move the user icon to the right */
+    margin-right: 3rem; /* Add some space between the user icon and the previous element */
+    color: black; /* Ensure the color is consistent with other navbar elements */
+  }
+  .navbar-user-profile {
+    margin-right: 3rem; /* Add some space between the text and the previous element */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    font-size: 1.1rem; /* Adjust font size as needed */
+    font-weight: 600; /* Adjust font weight as needed */
+    color: black; /* Ensure the color is consistent with other navbar elements */
+  }
+  
+  /* Adjust other styles as needed */
+  
